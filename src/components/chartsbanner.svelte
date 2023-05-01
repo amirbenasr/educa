@@ -1,14 +1,40 @@
+<script>
+  import anime from "animejs";
+  import { onMount } from "svelte";
+  onMount(() => {
+    anime({
+      targets: ".chart-block",
+      translateX: 10,
+      delay: anime.stagger(100), // increase delay by 100ms for each elements.
+    });
+    // anime({
+    //   targets: "#ns",
+    //   innerHTML: ["0+", "250+"],
+    //   easing: "linear",
+    //   duration: "1500",
+    //   round: 1,
+    // });
+    // anime({
+    //   targets: "#pr",
+    //   innerHTML: ["0%", "95%"],
+    //   easing: "linear",
+    //   duration: "1500",
+    //   round: 1,
+    // });
+  });
+</script>
+
 <div class="chart-banner">
-  <div class="chart-block">
+  <div id="one" class="chart-block">
     <span class="emph">#1</span>
     <span class="content">study & travel agency in tunisia</span>
   </div>
-  <div class="chart-block">
-    <span class="emph">+215</span>
+  <div id="two" class="chart-block">
+    <span id="ns" class="emph">+215</span>
     <span class="content">students all across the us</span>
   </div>
-  <div class="chart-block">
-    <span class="emph">95%</span>
+  <div id="three" class="chart-block">
+    <span id="pr" class="emph">95%</span>
     <span class="content">visa approval rate</span>
   </div>
 </div>
@@ -45,6 +71,7 @@
   .chart-banner > * {
     flex: 1;
   }
+
   .chart-block {
     font-weight: 600;
     display: flex;

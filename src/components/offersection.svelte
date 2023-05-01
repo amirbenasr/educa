@@ -23,13 +23,12 @@
 </div>
 
 <style lang="scss">
-  @media (max-width: 800px) {
+  @media (max-width: 750px) {
     .program__container {
       display: flex !important;
       flex-direction: column !important;
     }
     .content {
-      border: 1px solid firebrick;
       display: flex !important;
       flex-direction: column !important;
       justify-content: center !important;
