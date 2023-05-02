@@ -10,6 +10,5 @@
 
 <style>
   main {
-    overflow-x: hidden !important;
   }
 </style>

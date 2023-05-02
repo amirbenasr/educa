@@ -120,8 +120,10 @@
     }
   }
   nav.nav {
-    position: relative !important;
-
+    z-index: 69;
+    position: sticky;
+    opacity: 0.9;
+    top: 0;
     height: 60px;
     font-weight: 500;
     text-transform: uppercase;

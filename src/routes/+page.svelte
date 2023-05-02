@@ -8,6 +8,7 @@
   import Offersection from "../components/offersection.svelte";
   import Destinations from "../components/destinations.svelte";
   import Footer from "../components/layout/footer.svelte";
+  import Testimonials from "../components/testimonials.svelte";
 
   const themes = {
     blueG: {
@@ -58,16 +59,16 @@
           theme: theme,
           title: "program",
           content:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla neque ac dignissim aliquet. ",
+            "We help choose destinations, develop itineraries, and plan educational activities.",
         }}
       />
       <Sticker
         props={{
           rot: -2,
           theme: theme,
-          title: "program",
+          title: "customization",
           content:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla neque ac dignissim aliquet. ",
+            "We work with educational institutions to create customized programs that meet the specific needs and interests of our students.",
         }}
       />
     </div>
@@ -89,7 +90,7 @@
           theme: theme,
           title: "Language classes",
           content:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla neque ac dignissim aliquet. ",
+            "We offer a set of academic language classes suitable for every level. ",
         }}
       />
       <Sticker
@@ -98,7 +99,7 @@
           theme: theme,
           title: "cultural excursions",
           content:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla neque ac dignissim aliquet. ",
+            "We work with local partners and institutions to provide opportunities for students to learn about history, art, language.",
         }}
       />
     </div>
@@ -118,7 +119,7 @@
           theme: theme,
           title: "Transportation",
           content:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla neque ac dignissim aliquet. ",
+            "We handle the logistics of travel and coordinate all aspects of the program, from transportation to lodging to meals.",
         }}
       />
       <Sticker
@@ -127,13 +128,14 @@
           theme: theme,
           title: "Guidance",
           content:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla neque ac dignissim aliquet. ",
+            "We also provide on-site support and guidance to participants.",
         }}
       />
     </div>
   </Offersection>
 </section>
 <Destinations />
+<!-- <Testimonials /> -->
 <Footer />
 
 <style lang="scss">

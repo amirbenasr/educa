@@ -4,23 +4,28 @@
   onMount(() => {
     anime({
       targets: ".chart-block",
-      translateX: 10,
-      delay: anime.stagger(100), // increase delay by 100ms for each elements.
+      opacity: [0, 1],
+      translateX: [-500, 0],
+      duration: "1000",
+      delay: anime.stagger(400), // increase delay by 100ms for each elements.
     });
-    // anime({
-    //   targets: "#ns",
-    //   innerHTML: ["0+", "250+"],
-    //   easing: "linear",
-    //   duration: "1500",
-    //   round: 1,
-    // });
-    // anime({
-    //   targets: "#pr",
-    //   innerHTML: ["0%", "95%"],
-    //   easing: "linear",
-    //   duration: "1500",
-    //   round: 1,
-    // });
+
+    anime({
+      targets: "#ns",
+      innerHTML: ["0+", "250+"],
+      easing: "linear",
+      duration: "2500",
+      round: 1,
+      delay: 600,
+    });
+    anime({
+      targets: "#pr",
+      innerHTML: ["0%", "95%"],
+      easing: "linear",
+      duration: "2500",
+      round: 1,
+      delay: 600,
+    });
   });
 </script>
 
