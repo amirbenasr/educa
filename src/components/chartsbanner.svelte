@@ -5,7 +5,7 @@
     anime({
       targets: ".chart-block",
       opacity: [0, 1],
-      translateX: [-500, 0],
+      // translateX: [-500, 0],
       duration: "1000",
       delay: anime.stagger(400), // increase delay by 100ms for each elements.
     });
@@ -64,6 +64,7 @@
     }
   }
   .chart-banner {
+    opacity: 0.8;
     display: flex;
     position: absolute;
     align-items: start;

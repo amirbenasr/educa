@@ -10,9 +10,11 @@
       <a
         href="https://www.google.com/maps/dir/36.8665383,10.22637/36.8482342,10.2703983/@36.852128,10.2056903,13z/"
       >
-        Tunis, Tunisie <br />Lac 2, Immeuble Saphir <br /> Local B.3.2 Rue De La
-        Bourse</a
-      >
+        <p>Tunis, Tunisie</p>
+
+        <p>Lac 2, Immeuble Saphir</p>
+        <p>Local B.3.2 Rue De La Bourse</p>
+      </a>
     </div>
   </div>
   <div class="right">
@@ -111,6 +113,13 @@
     font-size: 0.8rem;
     a {
       color: white;
+      font-weight: 500;
+    }
+    p {
+      line-height: 1.5;
+    }
+    .address {
+      margin-top: 0.8rem;
     }
   }
   .logo {

@@ -76,6 +76,7 @@
   }
   @media (max-width: 800px) {
     nav {
+      position: relative !important;
       ul {
         display: none !important;
       }
@@ -120,10 +121,10 @@
     }
   }
   nav.nav {
-    z-index: 69;
     position: sticky;
-    opacity: 0.9;
     top: 0;
+    z-index: 55;
+    opacity: 0.9;
     height: 60px;
     font-weight: 500;
     text-transform: uppercase;
