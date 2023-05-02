@@ -41,10 +41,10 @@
     </button>
   </div>
   <ul>
-    <li><a href="http://">home</a></li>
-    <li><a href="http://">about</a></li>
-    <li><a href="http://">articles</a></li>
-    <li class="action"><a href="http://">apply</a></li>
+    <li><a href="#">home</a></li>
+    <li><a href="#">about</a></li>
+    <li><a href="#">articles</a></li>
+    <li class="action"><a href="#">apply</a></li>
   </ul>
 </nav>
 <div class="mobile-menu hide" bind:this={mobileMenu}>

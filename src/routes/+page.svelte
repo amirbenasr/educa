@@ -37,7 +37,7 @@
       video.innerHTML = `<source src="${video2}">`;
     } else if (WindowWidth > 1200) {
       //It is a big screen or desktop
-      video.innerHTML = "<source src='/src/lib/video2.mp4'>";
+      video.innerHTML = `<source src="${video2}">`;
     }
   });
 </script>
@@ -197,7 +197,7 @@
     align-items: center;
     .hero-text {
       display: block;
-      opacity: 1;
+      opacity: 0;
     }
 
     video {
