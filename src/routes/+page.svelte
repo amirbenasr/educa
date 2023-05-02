@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import Chartsbanner from "../components/chartsbanner.svelte";
   import figure from "$lib/images/figure1.png";
   import figure1 from "$lib/images/figure2.png";
@@ -9,6 +9,8 @@
   import Destinations from "../components/destinations.svelte";
   import Footer from "../components/layout/footer.svelte";
   import Testimonials from "../components/testimonials.svelte";
+  import video2 from "$lib/video.mp4";
+  import { onMount } from "svelte";
 
   const themes = {
     blueG: {
@@ -24,9 +26,25 @@
       color2: "#00FFBE",
     },
   };
+
+  //video appending logic
+  let video: HTMLElement;
+
+  let WindowWidth;
+  onMount(() => {
+    if (WindowWidth < 1200) {
+      //It is a small screen
+      video.innerHTML = `<source src="${video2}">`;
+    } else if (WindowWidth > 1200) {
+      //It is a big screen or desktop
+      video.innerHTML = "<source src='/src/lib/video2.mp4'>";
+    }
+  });
 </script>
 
+<svelte:window bind:innerWidth={WindowWidth} />
 <section class="hero">
+  <video bind:this={video} muted autoplay loop id="myVideo" />
   <div class="hero-text">
     <span class="big-title">EDUCA US.</span>
     <hr />
@@ -144,6 +162,9 @@
       font-size: var(--font-size-xl) !important;
     }
   }
+  video {
+    position: relative;
+  }
   .offers__header {
     text-transform: uppercase;
     text-align: center;
@@ -162,22 +183,34 @@
     margin: 0 auto;
   }
   .hero {
-    background: url("$lib/images/hero.jpg");
+    // background: url("$lib/images/hero.jpg");
+
     box-shadow: inset 0 2em 100px 0 var(--primary-color);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
     height: calc(100vh - 60px);
     height: calc(100svh - 60px);
-    width: 100%;
+    opacity: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     .hero-text {
       display: block;
+      opacity: 1;
+    }
+
+    video {
+      z-index: -1;
+      scale: 1;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      object-position: 50% 20%;
     }
 
     .hero-text {
+      position: absolute;
       text-shadow: 0px 1px 5px rgb(44, 42, 42);
       text-align: center;
       font-weight: 700;
