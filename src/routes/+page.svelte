@@ -153,10 +153,13 @@
   </Offersection>
 </section>
 <Destinations />
-<!-- <Testimonials /> -->
+<Testimonials />
 <Footer />
 
 <style lang="scss">
+  video {
+    object-position: 50% 20% !important;
+  }
   @media (min-width: 850px) {
     .offers_title {
       font-size: var(--font-size-xl) !important;

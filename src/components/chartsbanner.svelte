@@ -54,12 +54,14 @@
       justify-content: center !important;
       gap: 1rem;
       text-transform: uppercase;
+
       .emph {
         font-size: clamp(3em, 0.25vw + 2em, 0.5em) !important;
       }
-      .content {
+      span.content {
         font-size: clamp(0.5em, 0.5vw + 0.5em, 1em);
         max-width: 200px;
+        line-height: 1.5 !important;
       }
     }
   }
@@ -69,7 +71,7 @@
     position: absolute;
     align-items: start;
     justify-content: space-around;
-    padding-inline: clamp(1rem, 5vw, 1rem);
+    padding-block: clamp(1rem, 5vw, 0.5rem);
     width: 100%;
     background-color: var(--accent-color);
     bottom: 0;
@@ -89,8 +91,9 @@
     .emph {
       font-size: clamp(2em, 0.25vw + 1em, 0.5em);
     }
-    .content {
+    span.content {
       font-size: clamp(0.5em, 0.1vw + 0.5em, 1em);
+      line-height: 1.5 !important;
     }
   }
 </style>
