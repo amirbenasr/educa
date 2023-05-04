@@ -82,7 +82,7 @@
       />
       <Sticker
         props={{
-          rot: -2,
+          rot: -1,
           theme: theme,
           title: "customization",
           content:
@@ -104,7 +104,7 @@
     <div slot="stickers" let:theme>
       <Sticker
         props={{
-          rot: 2,
+          rot: 1,
           theme: theme,
           title: "Language classes",
           content:
@@ -113,7 +113,7 @@
       />
       <Sticker
         props={{
-          rot: -2,
+          rot: -1,
           theme: theme,
           title: "cultural excursions",
           content:
@@ -133,7 +133,7 @@
     <div slot="stickers" let:theme>
       <Sticker
         props={{
-          rot: 2,
+          rot: 0,
           theme: theme,
           title: "Transportation",
           content:
@@ -142,7 +142,7 @@
       />
       <Sticker
         props={{
-          rot: -2,
+          rot: 0,
           theme: theme,
           title: "Guidance",
           content:

@@ -2,9 +2,23 @@
   import logo from "$lib/logos/logo.png";
   import hamburger from "$lib/svgs/hamburger.svg";
   import close from "$lib/svgs/close.svg";
+  import { onMount } from "svelte";
   let mobileMenu;
   let hamburgerElement;
   let closeElement;
+  let a;
+
+  onMount(() => {
+    a = document.querySelectorAll("a");
+    a.forEach((e) => {
+      e.addEventListener("click", function (e) {
+        // closeMobileMenu();
+        // mobileMenu.classList.toggle("hide");
+        // hamburgerElement.style.display = "block";
+        // closeElement.style.display = "none";
+      });
+    });
+  });
   function showMobileMenu() {
     mobileMenu.classList.toggle("hide");
     hamburgerElement.style.display = "none";
@@ -41,18 +55,18 @@
     </button>
   </div>
   <ul>
-    <li><a href="#">home</a></li>
+    <li><a href="/">home</a></li>
     <li><a href="#">about</a></li>
-    <li><a href="#">articles</a></li>
+    <li><a href="/articles">articles</a></li>
     <li class="action"><a href="#">apply</a></li>
   </ul>
 </nav>
 <div class="mobile-menu hide" bind:this={mobileMenu}>
-  <li class="action"><a href="http://">apply</a></li>
+  <li class="action"><a href="#">apply</a></li>
   <ul>
-    <li><a href="http://">home</a></li>
-    <li><a href="http://">about</a></li>
-    <li><a href="http://">articles</a></li>
+    <li><a href="/">home</a></li>
+    <li><a href="#">about</a></li>
+    <li><a href="/articles">articles</a></li>
   </ul>
 </div>
 

@@ -36,6 +36,7 @@ h3,
 h4 {
   overflow-wrap: break-word;
   hyphens: auto;
+  color: black;
 }
 p {
   font-size: var(--font-size-sm) !important;
