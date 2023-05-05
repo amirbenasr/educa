@@ -1,5 +1,9 @@
 <script>
+  import { goto } from "$app/navigation";
+  import { onMount } from "svelte";
+
   export let data;
+  let article;
   const { posts } = data;
 </script>
 
@@ -7,7 +11,14 @@
   <div class="articles">
     <h1 class="title">News at Educa Us</h1>
     {#each posts as post}
-      <div class="article">
+      <!-- svelte-ignore a11y-click-events-have-key-events -->
+      <div
+        on:click={() => {
+          goto(`articles/${post.slug}`);
+        }}
+        class="article"
+        bind:this={article}
+      >
         <header>
           <span class="article-category">{post.category}</span>
           <span class="article-title">{post.title.rendered}</span>
@@ -23,6 +34,10 @@
 </section>
 
 <style lang="scss">
+  a {
+    position: absolute;
+    bottom: 5;
+  }
   .articles {
     margin-top: 2rem;
     max-width: 80%;
@@ -32,10 +47,12 @@
     gap: 1rem;
   }
   .article {
+    position: relative;
     cursor: pointer;
     color: black;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 1rem;
     padding-bottom: 1rem;
     border-bottom: 2px solid var(--primary-color-lighter);
@@ -47,9 +64,13 @@
       color: var(--primary-color);
     }
     .img {
+      width: 150px;
+      height: 150px;
+
       img {
-        width: 100%;
-        aspect-ratio: 1.15/1;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: fill !important;
       }
     }
 

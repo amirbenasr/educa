@@ -57,7 +57,7 @@
 </section>
 
 <div class="offers__header">
-  <span class="offers_title">what we offer at educa us ?</span>
+  <span class="offers_title">what do we offer at educa us ?</span>
 </div>
 <section class="offers">
   <!-- FIRST OFFER -->
@@ -117,7 +117,7 @@
           theme: theme,
           title: "cultural excursions",
           content:
-            "We work with local partners and institutions to provide opportunities for students to learn about history, art, language.",
+            "We work with local partners and institutions to provide opportunities for students to learn about history, art and language.",
         }}
       />
     </div>
