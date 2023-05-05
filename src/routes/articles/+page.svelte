@@ -4,8 +4,8 @@
 </script>
 
 <section class="container">
-  <h1 class="title">News at Educa Us</h1>
   <div class="articles">
+    <h1 class="title">News at Educa Us</h1>
     {#each posts as post}
       <div class="article">
         <header>
@@ -25,6 +25,8 @@
 <style lang="scss">
   .articles {
     margin-top: 2rem;
+    max-width: 80%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 1rem;

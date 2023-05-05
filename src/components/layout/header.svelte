@@ -22,7 +22,7 @@
 
 <nav class="nav">
   <div class="logo">
-    <a href="/">
+    <a on:click={() => closeMobileMenu()} href="/">
       <img src={logo} alt="educa-us logo" srcset="" />
     </a>
   </div>
@@ -47,8 +47,8 @@
   </div>
   <ul>
     <li><a href="/">home</a></li>
-    <li><a href="#">about</a></li>
     <li><a href="/articles">articles</a></li>
+    <li><a href="#">about</a></li>
     <li class="action"><a href="#">apply</a></li>
   </ul>
 </nav>

@@ -58,6 +58,7 @@ h4 {
 
 section {
   /* padding: 1.5rem; */
+  padding-top: 1rem !important;
 }
 .title {
   color: var(--primary-color);
@@ -70,8 +71,8 @@ section {
 
 @media (max-width: 1200px) {
   .container {
-    max-width: 1000px;
-    margin: 0 auto;
+    max-width: 1000px !important;
+    margin: 0 auto !important;
   }
 }
 @media (max-width: 1000px) {

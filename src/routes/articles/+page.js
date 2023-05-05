@@ -1,4 +1,4 @@
-import { BASE_URL, POSTS_API_URL } from "$lib/consts";
+import { BASE_URL, POSTS_API_URL } from "../../lib/consts";
 
 /** @type {import('./$types').PageLoad} */
 export async function load({ fetch }) {
