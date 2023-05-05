@@ -69,6 +69,9 @@
       }
     }
   }
+  section {
+    margin-bottom: 0 !important;
+  }
   .destinations {
     // padding: 1rem;
     position: relative;
