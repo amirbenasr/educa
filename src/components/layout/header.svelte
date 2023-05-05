@@ -8,17 +8,6 @@
   let closeElement;
   let a;
 
-  onMount(() => {
-    a = document.querySelectorAll("a");
-    a.forEach((e) => {
-      e.addEventListener("click", function (e) {
-        // closeMobileMenu();
-        // mobileMenu.classList.toggle("hide");
-        // hamburgerElement.style.display = "block";
-        // closeElement.style.display = "none";
-      });
-    });
-  });
   function showMobileMenu() {
     mobileMenu.classList.toggle("hide");
     hamburgerElement.style.display = "none";
@@ -33,7 +22,9 @@
 
 <nav class="nav">
   <div class="logo">
-    <img src={logo} alt="educa-us logo" srcset="" />
+    <a href="/">
+      <img src={logo} alt="educa-us logo" srcset="" />
+    </a>
   </div>
   <div class="burger-area">
     <button
@@ -64,9 +55,9 @@
 <div class="mobile-menu hide" bind:this={mobileMenu}>
   <li class="action"><a href="#">apply</a></li>
   <ul>
-    <li><a href="/">home</a></li>
-    <li><a href="#">about</a></li>
-    <li><a href="/articles">articles</a></li>
+    <li><a on:click={closeMobileMenu} href="/">home</a></li>
+    <li><a on:click={closeMobileMenu} href="#">about</a></li>
+    <li><a on:click={closeMobileMenu} href="/articles">articles</a></li>
   </ul>
 </div>
 
