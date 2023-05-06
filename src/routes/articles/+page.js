@@ -1,4 +1,5 @@
 import { BASE_URL, POSTS_API_URL } from "../../lib/consts";
+export const prerender = true;
 
 /** @type {import('./$types').PageLoad} */
 export async function load({ fetch }) {

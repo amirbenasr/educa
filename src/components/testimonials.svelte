@@ -47,16 +47,21 @@
   ];
 </script>
 
-<section class="testimonials">
-  <h1>Testimonials</h1>
-  <div class="box">
-    {#each testimonials as testimonial}
-      <TestimonialCard {testimonial} />
-    {/each}
-  </div>
-</section>
+<div class="blue">
+  <section class="container testimonials">
+    <h1 style="margin-bottom: 1rem;">Testimonials</h1>
+    <div class="box">
+      {#each testimonials as testimonial}
+        <TestimonialCard {testimonial} />
+      {/each}
+    </div>
+  </section>
+</div>
 
 <style lang="scss">
+  .blue {
+    background: var(--primary-color);
+  }
   @media (min-width: 820px) {
     .box {
       display: grid !important;

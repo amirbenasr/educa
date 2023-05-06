@@ -73,7 +73,7 @@
     <div slot="stickers" let:theme>
       <Sticker
         props={{
-          rot: 2,
+          rot: 0,
           theme: theme,
           title: "program",
           content:
@@ -82,7 +82,7 @@
       />
       <Sticker
         props={{
-          rot: -1,
+          rot: 0,
           theme: theme,
           title: "customization",
           content:
@@ -104,7 +104,7 @@
     <div slot="stickers" let:theme>
       <Sticker
         props={{
-          rot: 1,
+          rot: 0,
           theme: theme,
           title: "Language classes",
           content:
@@ -113,7 +113,7 @@
       />
       <Sticker
         props={{
-          rot: -1,
+          rot: 0,
           theme: theme,
           title: "cultural excursions",
           content:
@@ -153,7 +153,7 @@
   </Offersection>
 </section>
 <Destinations />
-<Testimonials />
+<!-- <Testimonials /> -->
 <Footer />
 
 <style lang="scss">

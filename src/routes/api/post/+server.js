@@ -1,5 +1,4 @@
 import { BASE_URL, POSTS_API_URL } from "../../../lib/consts";
-
 export const GET = async ({ url, locals }) => {
   const slug = url.searchParams.get("slug");
   const language = locals.language;
