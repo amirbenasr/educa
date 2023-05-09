@@ -58,7 +58,7 @@ h4 {
 
 section {
   /* padding: 1.5rem; */
-  padding-top: 1rem !important;
+  /* padding-top: 1rem !important; */
 }
 .title {
   color: var(--primary-color);

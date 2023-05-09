@@ -205,11 +205,11 @@
 
     video {
       z-index: -1;
-      scale: 1;
-      object-fit: cover;
+      // scale: 1;
+      object-fit: fill;
       width: 100%;
       height: 100%;
-      object-position: 50% 20%;
+      // object-position: 50% 20%;
     }
 
     .hero-text {
