@@ -1,6 +1,6 @@
 deployment:
   tasks:
-    - EXPORT DIRPATH=/home/wipd0555/public_html
-    - /bin/cp -r ./ DIRPATH
+    - EXPORT DIRPATH=/home/wipd0555/public_html/
+    - /bin/cp -r ./ $DIRPATH
     - npm run build
     - npx pm2 restart 1
