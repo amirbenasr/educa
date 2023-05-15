@@ -57,7 +57,9 @@
   <ul>
     <li><a on:click={closeMobileMenu} href="/">home</a></li>
     <li><a on:click={closeMobileMenu} href="#">about</a></li>
-    <li><a on:click={closeMobileMenu} href="/articles">articles</a></li>
+    <li>
+      <a on:click={closeMobileMenu} href="/articles">articles</a>
+    </li>
   </ul>
 </div>
 

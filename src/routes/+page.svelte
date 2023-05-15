@@ -11,7 +11,12 @@
   import Testimonials from "../components/testimonials.svelte";
   import video2 from "$lib/video.mp4";
   import { onMount } from "svelte";
+  import { preloadCode, preloadData } from "$app/navigation";
+  import Load from "../components/load.svelte";
 
+  // onMount(() => {
+  //   preloadData("/articles");
+  // });
   const themes = {
     blueG: {
       color1: "#224373",
@@ -27,24 +32,23 @@
     },
   };
 
+  let loading = true;
   //video appending logic
   let video: HTMLElement;
-
-  let WindowWidth;
-  onMount(() => {
-    if (WindowWidth < 1200) {
-      //It is a small screen
-      video.innerHTML = `<source src="${video2}">`;
-    } else if (WindowWidth > 1200) {
-      //It is a big screen or desktop
-      video.innerHTML = `<source src="${video2}">`;
-    }
-  });
 </script>
 
-<svelte:window bind:innerWidth={WindowWidth} />
 <section class="hero">
-  <video bind:this={video} muted autoplay loop id="myVideo" />
+  {#if loading}
+    <Load />
+  {/if}
+  <video
+    on:canplay={() => (loading = false)}
+    src={video2}
+    muted
+    autoplay
+    loop
+    id="myVideo"
+  />
   <div class="hero-text">
     <span class="big-title">EDUCA US.</span>
     <hr />
@@ -153,7 +157,7 @@
   </Offersection>
 </section>
 <Destinations />
-<!-- <Testimonials /> -->
+<Testimonials />
 <Footer />
 
 <style lang="scss">
@@ -187,7 +191,7 @@
   }
   .hero {
     // background: url("$lib/images/hero.jpg");
-
+    position: relative;
     box-shadow: inset 0 2em 100px 0 var(--primary-color);
     // background-repeat: no-repeat;
     // background-size: cover;

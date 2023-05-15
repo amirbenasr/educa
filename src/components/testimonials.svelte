@@ -4,45 +4,45 @@
   let testimonials: Testimonial[] = [
     {
       content:
-        "Sunt irure quis consequat culpa qui est laboris Lorem. Exercitation ad tempor aliqua quis do velit. Sint sint mollit nisi irure laborum non eu aliqua nulla enim enim laboris ipsum elit.",
-      name: "Cornell",
-      pic: "http://placeimg.com/640/480",
-      profession: "Chief Quality Analyst",
+        "EducaUs offers expert guidance to help you choose the right college and navigate the application process, ultimately helping you achieve success in your academic and professional pursuits.",
+      name: "Mahdi Daraji",
+      pic: "mahdi.jpg",
+      profession: "Student",
     },
     {
       content:
-        "Culpa ipsum Lorem ea elit. Dolore et id quis deserunt. Aute enim ea in incididunt aute proident esse. Do mollit reprehenderit cillum nulla nostrud enim nulla elit est adipisicing. Elit quis ex reprehenderit eiusmod duis qui commodo.",
-      name: "Jayce",
-      pic: "http://placeimg.com/640/480",
-      profession: "International Functionality Officer",
+        "Despite my unique personal profile, there are solutions available to help me overcome any challenges and succeed in my academic and professional pursuits. With the right resources and support from EducaUS, I can navigate my differences and find a path that aligns with my goals and aspirations",
+      name: "Walid Ferjani",
+      pic: "walid.jpg",
+      profession: "Student",
     },
     {
       content:
-        "Aute exercitation incididunt veniam cupidatat minim adipisicing quis qui do esse anim proident ullamco. Culpa enim commodo anim deserunt quis aliqua. Et ullamco eiusmod officia nostrud dolore consectetur occaecat enim eu deserunt culpa sunt voluptate.",
-      name: "Brendon",
-      pic: "http://placeimg.com/640/480",
-      profession: "Customer Program Engineer",
+        "With the guidance and assistance of EducaUs, I was able to successfully pursue my studies in IT and obtain a visa to study in the United States. I'm grateful for their support and wish them good health as they continue to help other students achieve their academic and professional goals. ",
+      name: "Siwar Ben Khlifa",
+      pic: "siwar.jpg",
+      profession: "Student",
     },
     {
       content:
-        "Ullamco irure ut dolor dolor laborum irure pariatur ullamco amet tempor. Officia magna exercitation nostrud ea excepteur sunt occaecat deserunt velit fugiat sint mollit. Et ad non eu eu minim labore cupidatat in nisi. Eu esse occaecat in irure ad eu esse culpa nostrud pariatur. Nulla deserunt nulla nisi ea. Tempor non magna sint tempor reprehenderit in in commodo ipsum nisi qui. Fugiat exercitation non occaecat anim nulla magna reprehenderit eu.",
-      name: "Kory",
-      pic: "http://placeimg.com/640/480",
-      profession: "Future Web Designer",
+        "EducaUs provides tailored support and guidance to help you identify the best college or university for your academic and career goals, and assists you throughout the application process to ensure your success.",
+      name: "Adem Haddaji",
+      pic: "adem.jpg",
+      profession: "Student",
     },
     {
       content:
-        "Labore mollit nulla irure labore. Ullamco duis consectetur elit qui ea minim aliqua eiusmod. Nulla consectetur in amet occaecat et ut aliqua non nisi et nulla enim qui. Dolor fugiat aute ullamco velit labore cillum labore dolor duis ad ex magna aliquip. Elit ex deserunt ullamco proident pariatur anim mollit cillum qui proident qui in.",
-      name: "Wiley",
-      pic: "http://placeimg.com/640/480",
-      profession: "Dynamic Intranet Orchestrator",
+        "Since childhood, I have nurtured the dream of studying in the United States, and thanks to EducaUs, I was able to realize that dream. The English language reinforcement sessions organized by EducaUs enabled me to improve significantly, and I received assistance from their team throughout my academic journey.",
+      name: "Aya Trabelsi",
+      pic: "eya.jpg",
+      profession: "Student",
     },
     {
       content:
-        "Dolor id officia eiusmod cillum esse. Ea consequat in ut esse culpa laborum proident duis. Tempor irure voluptate duis sint. Elit deserunt elit eiusmod sint ut voluptate. In ad in est qui reprehenderit elit quis.",
-      name: "Giuseppe",
-      pic: "http://placeimg.com/640/480",
-      profession: "Future Accounts Director",
+        "EducaUs provided me with invaluable guidance and support that enabled me to achieve my dream of studying in the United States in the field of IT. With their help, I successfully obtained a visa and embarked on a journey of academic excellence. I am deeply thankful to EducaUs and their team for their dedication to helping students achieve their aspirations.",
+      name: "Haythem el ghribi",
+      pic: "haythem.jpg",
+      profession: "Student",
     },
   ];
 </script>

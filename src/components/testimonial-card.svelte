@@ -58,15 +58,14 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    .content {
-      //   max-height: 3rem;
-    }
+
     .testimonial__header {
-      align-self: self-end;
+      margin-top: auto;
+      margin-left: auto;
       display: flex;
       gap: 0.5rem;
       align-items: center;
-      justify-content: start;
+      justify-content: center;
     }
     .avatar {
       //   border: 1px solid red;
