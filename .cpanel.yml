@@ -3,4 +3,3 @@ deployment:
     - EXPORT DIRPATH=/home/wipd0555/public_html/
     - /bin/cp -r ./ $DIRPATH
     - npm run build
-    - npx pm2 stop 1
