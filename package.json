@@ -11,11 +11,7 @@
     "lint": "eslint ."
   },
   "type": "module",
-  "dependencies": {
-    "animejs": "^3.2.1",
-    "date-fns": "^2.30.0",
-    "node-sass": "^8.0.0",
-    "svelte-preprocess": "^5.0.3",
+  "devDependencies": {
     "@sveltejs/adapter-auto": "^2.0.0",
     "@sveltejs/adapter-node": "^1.2.4",
     "@sveltejs/adapter-static": "^2.0.2",
@@ -27,5 +23,11 @@
     "svelte-check": "^3.0.1",
     "typescript": "^5.0.0",
     "vite": "^4.3.0"
+  },
+  "dependencies": {
+    "animejs": "^3.2.1",
+    "date-fns": "^2.30.0",
+    "node-sass": "^8.0.0",
+    "svelte-preprocess": "^5.0.3"
   }
 }
