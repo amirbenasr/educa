@@ -121,7 +121,7 @@
           theme: theme,
           title: "cultural excursions",
           content:
-            "We work with local partners and institutions to provide opportunities for students to learn about history, art and language.",
+            "We work with local partners and institutions to provide opportunities for students to learn about history, art, and language.",
         }}
       />
     </div>
