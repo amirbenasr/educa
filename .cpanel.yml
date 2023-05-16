@@ -2,6 +2,4 @@ deployment:
   tasks:
     - export DIRPATH=/home/wipd0555/public_html/
     - /bin/cp -rf ./ $DIRPATH
-    - pwd
-    - ls
     - /bin/bash ./script.sh > /dev/null
