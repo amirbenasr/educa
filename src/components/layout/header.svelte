@@ -128,8 +128,8 @@
     }
   }
   nav.nav {
-    position: sticky;
-    top: 0;
+    // position: sticky;
+    // top: 0;
     z-index: 55;
     opacity: 0.9;
     height: 60px;

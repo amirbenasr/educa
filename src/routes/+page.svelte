@@ -10,9 +10,8 @@
   import Footer from "../components/layout/footer.svelte";
   import Testimonials from "../components/testimonials.svelte";
   import video2 from "$lib/video.mp4";
-  import { onMount } from "svelte";
-  import { preloadCode, preloadData } from "$app/navigation";
   import Load from "../components/load.svelte";
+  import OffersSlider from "../components/offersSlider.svelte";
 
   // onMount(() => {
   //   preloadData("/articles");
@@ -32,23 +31,12 @@
     },
   };
 
-  let loading = true;
   //video appending logic
   let video: HTMLElement;
 </script>
 
 <section class="hero">
-  {#if loading}
-    <Load />
-  {/if}
-  <video
-    on:canplay={() => (loading = false)}
-    src={video2}
-    muted
-    autoplay
-    loop
-    id="myVideo"
-  />
+  <video src={video2} muted autoplay loop id="myVideo" />
   <div class="hero-text">
     <span class="big-title">EDUCA US.</span>
     <hr />
@@ -60,113 +48,35 @@
   <Chartsbanner />
 </section>
 
-<div class="offers__header">
-  <span class="offers_title">what do we offer at educa us ?</span>
-</div>
-<section class="offers">
-  <!-- FIRST OFFER -->
-  <Offersection
-    title="Program design & customization"
-    {figure}
-    svg={line1}
-    linePosition={{ left: 500, right: 0 }}
-    theme={{
-      ...themes.blueG,
-    }}
-  >
-    <div slot="stickers" let:theme>
-      <Sticker
-        props={{
-          rot: 0,
-          theme: theme,
-          title: "program",
-          content:
-            "We help choose destinations, develop itineraries, and plan educational activities.",
-        }}
-      />
-      <Sticker
-        props={{
-          rot: 0,
-          theme: theme,
-          title: "customization",
-          content:
-            "We work with educational institutions to create customized programs that meet the specific needs and interests of our students.",
-        }}
-      />
-    </div>
-  </Offersection>
-  <!-- SECOND OFFER -->
-  <Offersection
-    title="Academic coursework"
-    figure={figure1}
-    svg={line1}
-    linePosition={{ left: 32, right: 0 }}
-    theme={{ ...themes.redY }}
-    positions={{ figure: "8/12", stickers: "3/7" }}
-    titleGrid="7/12"
-  >
-    <div slot="stickers" let:theme>
-      <Sticker
-        props={{
-          rot: 0,
-          theme: theme,
-          title: "Language classes",
-          content:
-            "We offer a set of academic language classes suitable for every level. ",
-        }}
-      />
-      <Sticker
-        props={{
-          rot: 0,
-          theme: theme,
-          title: "cultural excursions",
-          content:
-            "We work with local partners and institutions to provide opportunities for students to learn about history, art, and language.",
-        }}
-      />
-    </div>
-  </Offersection>
-  <!-- THIRD OFFER -->
-  <Offersection
-    title="Logistics and coordination"
-    figure={figure2}
-    svg={line1}
-    linePosition={{ left: 32, right: 0 }}
-    theme={{ ...themes.purpleC }}
-  >
-    <div slot="stickers" let:theme>
-      <Sticker
-        props={{
-          rot: 0,
-          theme: theme,
-          title: "Transportation",
-          content:
-            "We handle the logistics of travel and coordinate all aspects of the program, from transportation to lodging to meals.",
-        }}
-      />
-      <Sticker
-        props={{
-          rot: 0,
-          theme: theme,
-          title: "Guidance",
-          content:
-            "We also provide on-site support and guidance to participants.",
-        }}
-      />
-    </div>
-  </Offersection>
-</section>
+<!-- <div class="spacer layer" /> -->
+<OffersSlider />
 <Destinations />
 <Testimonials />
 <Footer />
 
 <style lang="scss">
-  video {
-    object-position: 50% 20% !important;
+  .spacer {
+    aspect-ratio: 2/1;
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
-  @media (min-width: 850px) {
+  .layer {
+    background-image: url("$lib/svgs/waves.svg");
+    width: 100%;
+  }
+  @media (width > 850px) {
     .offers_title {
       font-size: var(--font-size-xl) !important;
+    }
+  }
+  @media (width < 800px) {
+    video {
+      max-width: 100% !important;
+      max-height: 100% !important;
+      object-position: 15% 60%;
+      object-fit: cover !important;
     }
   }
   video {

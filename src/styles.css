@@ -8,7 +8,8 @@
   --font-size-xl: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
   --font-size-xxl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
   --font-size-xxxl: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
-  --primary-color: #0a2d61;
+  --primary-color: hsla(213, 81%, 21%, 1);
+  --primary-color-darker: #02122e;
   --primary-color-lighter: #2b3f5d;
   --accent-color: #c10b17;
 }
@@ -22,9 +23,13 @@
   --line-height: calc(2ex + 12px);
   line-height: var(--line-height);
 }
+html {
+  /* scroll-behavior: smooth; */
+}
 
 body {
   font-family: "Montserrat", sans-serif;
+  background: hsla(213, 81%, 21%, 1);
   color: white;
   line-height: 1.5;
   font-size: var(--font-size-base);
@@ -67,6 +72,7 @@ section {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
 }
 
 @media (max-width: 1200px) {

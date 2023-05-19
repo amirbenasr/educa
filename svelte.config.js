@@ -1,6 +1,6 @@
 import preprocessor from "svelte-preprocess";
-// import adapter from '@sveltejs/adapter-static';
-import adapter from "@sveltejs/adapter-node";
+import adapter from "@sveltejs/adapter-static";
+// import adapter from "@sveltejs/adapter-node";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -16,7 +16,9 @@ const config = {
     //   precompress: false,
     //   strict: true,
     // }),
-    adapter: adapter(),
+    adapter: adapter({
+      fallback: "index.html", // 'index.html'
+    }),
   },
 };
 

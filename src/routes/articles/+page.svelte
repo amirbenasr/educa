@@ -1,15 +1,30 @@
 <script>
   import { goto } from "$app/navigation";
+  import { BASE_URL, POSTS_API_URL } from "$lib/consts";
   import { onMount } from "svelte";
 
-  export let data;
   let article;
-  const { posts } = data;
+  let posts = [];
+
+  async function loadPosts() {
+    const response = await fetch(BASE_URL + POSTS_API_URL + "?_embed");
+    const _posts = await response.json();
+    _posts.map((post) => {
+      if (post._embedded && post._embedded["wp:featuredmedia"]) {
+        post.image = post._embedded["wp:featuredmedia"][0].source_url;
+      }
+      post.category = post._embedded["wp:term"][0][0].name;
+    });
+    posts = _posts;
+    return posts;
+  }
 </script>
 
-<section class="container">
-  <div class="articles">
-    <h1 class="title">News at Educa Us</h1>
+<section class="container articles">
+  <h1 class="title">News at Educa Us</h1>
+  {#await loadPosts()}
+    <p class="title">Loading...</p>
+  {:then posts}
     {#each posts as post}
       <!-- svelte-ignore a11y-click-events-have-key-events -->
       <div
@@ -30,7 +45,7 @@
         </div>
       </div>
     {/each}
-  </div>
+  {/await}
 </section>
 
 <style lang="scss">
@@ -39,6 +54,7 @@
     bottom: 5;
   }
   .articles {
+    height: 100vh;
     margin-top: 2rem;
     max-width: 80%;
     margin: 0 auto;

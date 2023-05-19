@@ -18,7 +18,7 @@
     },
     {
       content:
-        "With the guidance and assistance of EducaUs, I was able to successfully pursue my studies in IT and obtain a visa to study in the United States. I'm grateful for their support and wish them good health as they continue to help other students achieve their academic and professional goals. ",
+        "With the guidance and assistance of EducaUs, I was able to successfully pursue my studies in IT and obtain a visa to study in the United States. I'm grateful for their support and wish them the best as they continue to help other students achieve their academic and professional goals. ",
       name: "Siwar Ben Khlifa",
       pic: "siwar.jpg",
       profession: "Student",
@@ -47,42 +47,33 @@
   ];
 </script>
 
-<div class="blue">
-  <section class="container testimonials">
-    <h1 style="margin-bottom: 1rem;">Testimonials</h1>
-    <div class="box">
-      {#each testimonials as testimonial}
-        <TestimonialCard {testimonial} />
-      {/each}
-    </div>
-  </section>
-</div>
+<section class="testimonials blue">
+  <h1 style="margin-top:0;margin-bottom:2rem;">Testimonials</h1>
+  <div class="box">
+    {#each testimonials as testimonial}
+      <TestimonialCard {testimonial} />
+    {/each}
+  </div>
+</section>
 
 <style lang="scss">
   .blue {
     background: var(--primary-color);
   }
-  @media (min-width: 820px) {
-    .box {
-      display: grid !important;
-      //   grid-template-columns: 1fr 1fr 1fr;
-      //   grid-auto-rows: 1fr;
-      grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
-    }
-  }
+
   .testimonials {
+    padding: 1rem;
+    .box {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(16rem, 20rem));
+      justify-content: center;
+      gap: 0.5rem;
+    }
     p {
       color: black;
       font-weight: 400;
       line-height: 1.6;
     }
     background: var(--primary-color);
-
-    .box {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
   }
 </style>

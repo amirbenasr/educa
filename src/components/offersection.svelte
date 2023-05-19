@@ -8,10 +8,12 @@
   export let titleGrid = "1/8";
 </script>
 
-<div class="program__container container">
-  <div class="program__title" style:grid-column={titleGrid}>
-    <h1 style:color={theme.color1}>{title}</h1>
-  </div>
+<div class="program__container">
+  <header>
+    <div class="program__title" style:grid-column={titleGrid}>
+      <h1 style:color={theme.color1}>{title}</h1>
+    </div>
+  </header>
   <div class="content">
     <div class="left" style:grid-column={positions.figure}>
       <img src={figure} alt="" />
@@ -23,22 +25,6 @@
 </div>
 
 <style lang="scss">
-  @media (max-width: 750px) {
-    .program__container {
-      display: flex !important;
-      flex-direction: column !important;
-    }
-    .content {
-      display: flex !important;
-      flex-direction: column !important;
-      justify-content: center !important;
-      align-items: center;
-    }
-    img {
-      height: 300px;
-      width: 300px;
-    }
-  }
   .lines {
     position: absolute;
     z-index: -1;
@@ -46,10 +32,8 @@
   .program__container {
     // padding: 2rem;
     position: relative;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-auto-flow: column;
-
+    display: flex;
+    flex-direction: column;
     img {
       height: 100%;
       max-width: 100%;

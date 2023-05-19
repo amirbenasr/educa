@@ -73,9 +73,9 @@
     margin-bottom: 0 !important;
   }
   .destinations {
-    // padding: 1rem;
+    padding-block: 1rem;
     position: relative;
-    background: #000000;
+    background: hsla(213, 81%, 21%, 1);
     display: flex;
     flex-direction: column;
     justify-content: center;
