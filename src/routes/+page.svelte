@@ -12,6 +12,7 @@
   import video2 from "$lib/video.mp4";
   import Load from "../components/load.svelte";
   import OffersSlider from "../components/offersSlider.svelte";
+  import Tests from "../components/tests.svelte";
 
   // onMount(() => {
   //   preloadData("/articles");
@@ -52,6 +53,7 @@
 <OffersSlider />
 <Destinations />
 <Testimonials />
+<Tests />
 <Footer />
 
 <style lang="scss">

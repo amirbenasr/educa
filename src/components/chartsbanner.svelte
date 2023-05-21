@@ -5,7 +5,7 @@
     anime({
       targets: ".chart-block",
       opacity: [0, 1],
-      // translateX: [-500, 0],
+      translateX: [-500, 0],
       duration: "1000",
       delay: anime.stagger(400), // increase delay by 100ms for each elements.
     });
@@ -14,7 +14,7 @@
       targets: "#ns",
       innerHTML: ["0+", "250+"],
       easing: "linear",
-      duration: "2500",
+      duration: "1000",
       round: 1,
       delay: 600,
     });
@@ -75,6 +75,7 @@
     width: 100%;
     background-color: var(--accent-color);
     bottom: 0;
+    overflow: hidden;
   }
   .chart-banner > * {
     flex: 1;
@@ -92,7 +93,7 @@
       font-size: clamp(2em, 0.25vw + 1em, 0.5em);
     }
     span.content {
-      font-size: clamp(0.5em, 0.1vw + 0.5em, 1em);
+      font-size: clamp(1em, 0.1vw + 0.5em, 1em);
       line-height: 1.5 !important;
     }
   }

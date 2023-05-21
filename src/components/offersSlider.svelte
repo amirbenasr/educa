@@ -15,8 +15,11 @@
   let slides;
 
   onMount(() => {
+    // select slides
     slides = document.querySelectorAll(".offer");
   });
+
+  // slide right
   const slideRight = (e) => {
     if (index <= 1) return;
     index--;
@@ -26,6 +29,7 @@
     });
     changeTheme();
   };
+  // slide left
   const slideLeft = (e) => {
     if (index >= 3) return;
     index++;
@@ -35,6 +39,8 @@
     });
     changeTheme();
   };
+
+  // change theme
   function changeTheme() {
     if (index == 1) offers.style.background = theme1;
 
@@ -49,7 +55,6 @@
     <h1 class="title">what we offer at educa us</h1>
   </header>
 
-  <!-- <div class="container"> -->
   <div class="offers__slider">
     <div class="right" on:click={slideRight} />
     <div class="left" on:click={slideLeft} />
@@ -151,7 +156,6 @@
       </div>
     </div>
   </div>
-  <!-- </div> -->
 </section>
 
 <style lang="scss">
@@ -219,7 +223,7 @@
     max-width: 60rem;
     height: 100%;
     scroll-snap-type: x mandatory;
-    // -ms-overflow-style: none; /* Hide scrollbar IE and Edge */
+    -ms-overflow-style: none; /* Hide scrollbar IE and Edge */
     scrollbar-width: none;
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -242,6 +246,8 @@
       padding-inline: 4rem;
       display: flex;
       justify-content: center;
+      align-items: center;
+      gap: 1.5rem;
     }
     .services {
       flex: 1;
