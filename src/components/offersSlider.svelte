@@ -159,6 +159,15 @@
 </section>
 
 <style lang="scss">
+  @media (width < 900px) {
+    .figure {
+      display: none;
+    }
+    .slide-content {
+      max-width: auto !important;
+      width: 50%;
+    }
+  }
   .right {
     cursor: pointer;
     position: absolute;
@@ -210,6 +219,7 @@
   }
 
   .offers {
+    overflow: hidden;
     background: linear-gradient(hsla(94, 31%, 82%, 1), hsla(213, 81%, 21%, 1));
     align-items: center;
     display: flex;
@@ -220,7 +230,7 @@
 
   .offers__slider {
     display: flex;
-    max-width: 60rem;
+    // max-width: 60rem;
     height: 100%;
     scroll-snap-type: x mandatory;
     -ms-overflow-style: none; /* Hide scrollbar IE and Edge */
@@ -243,7 +253,9 @@
     // transition: all 2s ease-in;
 
     .slide-content {
-      padding-inline: 4rem;
+      max-width: 80%;
+      // margin-inline: 4rem;
+      margin: 0 auto;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -251,7 +263,7 @@
     }
     .services {
       flex: 1;
-      flex-shrink: 0;
+      flex-shrink: 1;
     }
     .figure {
       flex: 1;

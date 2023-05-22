@@ -52,8 +52,8 @@
 <!-- <div class="spacer layer" /> -->
 <OffersSlider />
 <Destinations />
-<Testimonials />
 <Tests />
+<Testimonials />
 <Footer />
 
 <style lang="scss">

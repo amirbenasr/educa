@@ -49,11 +49,15 @@
 </section>
 
 <style lang="scss">
+  h1 {
+    color: white;
+  }
   a {
     position: absolute;
     bottom: 5;
   }
   .articles {
+    color: white;
     height: 100vh;
     margin-top: 2rem;
     max-width: 80%;
@@ -73,6 +77,7 @@
     padding-bottom: 1rem;
     border-bottom: 2px solid var(--primary-color-lighter);
     p {
+      color: white;
       transition: all 200ms ease-in;
       font-weight: 500;
     }

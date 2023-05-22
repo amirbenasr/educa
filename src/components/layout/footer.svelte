@@ -90,9 +90,10 @@
     }
   }
   footer {
+    border-top: 0.5px solid hsl(200, 100, 90%);
     padding: 2rem;
     text-align: left;
-    background: black;
+    // background: black;
     display: flex;
     flex-wrap: wrap;
 

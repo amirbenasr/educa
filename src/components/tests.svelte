@@ -58,6 +58,21 @@
 </section>
 
 <style lang="scss">
+  @media (width < 980px) {
+    .testimonials_container {
+      flex-direction: column;
+    }
+    .testimonial_list {
+      flex-direction: row !important;
+      height: 8rem;
+      max-width: max-content !important;
+    }
+    .wrapper {
+      // min-height: 200px;
+      overflow-x: scroll !important;
+      height: auto !important;
+    }
+  }
   .active {
     border: 2px solid hsl(150, 150, 30%);
   }
@@ -73,19 +88,20 @@
     cursor: pointer;
   }
   .testimonials {
-    height: 800px;
-    width: 1200px;
-    overflow: auto;
+    height: auto;
+    position: relative;
+    overflow: hidden;
   }
   .testimonials_container {
+    margin: 0 auto;
     padding: 2rem;
     display: flex;
+    width: 100%;
     gap: 1.5rem;
-    height: 300px;
   }
 
   .wrapper {
-    min-height: 400px;
+    height: 500px;
     overflow-y: scroll;
   }
   .wrapper::-webkit-scrollbar {
@@ -102,7 +118,7 @@
     }
   }
   .testimonial_list {
-    width: 20rem;
+    max-width: 20rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -110,9 +126,8 @@
   }
 
   .featured_testimonial {
-    width: 720px;
-    height: 400px;
-    aspect-ratio: 16/9;
+    max-width: auto;
+    height: 500px;
     background: red;
   }
 
