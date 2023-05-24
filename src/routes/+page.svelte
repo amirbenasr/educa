@@ -60,12 +60,12 @@
     background-image: url("$lib/svgs/waves.svg");
     width: 100%;
   }
-  @media (width > 850px) {
+  @media (min-width: 850px) {
     .offers_title {
       font-size: var(--font-size-xl) !important;
     }
   }
-  @media (width < 800px) {
+  @media (max-width: 800px) {
     video {
       max-width: 100% !important;
       max-height: 100% !important;

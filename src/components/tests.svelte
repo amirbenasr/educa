@@ -55,7 +55,7 @@
 </section>
 
 <style lang="scss">
-  @media (width < 980px) {
+  @media (max-width: 980px) {
     .testimonials_container {
       flex-direction: column;
       // background: white;
