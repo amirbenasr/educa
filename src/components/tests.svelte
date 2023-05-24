@@ -20,38 +20,35 @@
   <h1>client testimonials</h1>
   <div class="testimonials_container">
     <div class="featured_testimonial">
+      <!-- svelte-ignore a11y-media-has-caption -->
       <video
         controlslist="nodownload"
         bind:this={featured}
         id="featured_video"
         controls
-        src="https://www.w3schools.com/html/mov_bbb.mp4"
+        src="https://res.cloudinary.com/dyw4slb0a/video/upload/v1684865635/HAYTHEM_CARRe%CC%81_mjzsrk.mov"
       />
     </div>
     <div class="wrapper">
       <div class="testimonial_list">
+        <!-- svelte-ignore a11y-media-has-caption -->
         <video
           class="active"
           id="list"
-          src="https://www.w3schools.com/html/mov_bbb.mp4"
+          src="https://res.cloudinary.com/dyw4slb0a/video/upload/v1684865635/HAYTHEM_CARRe%CC%81_mjzsrk.mov"
         />
         <video
           id="list"
-          src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+          src="https://res.cloudinary.com/dyw4slb0a/video/upload/v1684865383/walid_ferjani_2_gistfm.mov"
         />
         <video
           id="list"
-          src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+          src="https://res.cloudinary.com/dyw4slb0a/video/upload/v1684865024/mahdi_te%CC%81moignge_002_yy6tfs.mov"
         />
         <video
           id="list"
-          src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
+          src="https://res.cloudinary.com/dyw4slb0a/video/upload/v1684864466/te%CC%81moignage_3_u8rrrb.mov"
         />
-        <video
-          id="list"
-          src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
-        />
-        <video id="list" src="https://www.w3schools.com/html/mov_bbb.mp4" />
       </div>
     </div>
   </div>
@@ -61,6 +58,7 @@
   @media (width < 980px) {
     .testimonials_container {
       flex-direction: column;
+      // background: white;
     }
     .testimonial_list {
       flex-direction: row !important;
@@ -68,7 +66,7 @@
       max-width: max-content !important;
     }
     .wrapper {
-      // min-height: 200px;
+      /* min-height: 200px; */
       overflow-x: scroll !important;
       height: auto !important;
     }
@@ -77,14 +75,18 @@
     border: 2px solid hsl(150, 150, 30%);
   }
   video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  video#list {
+    aspect-ratio: 16/9;
     max-width: 100%;
     max-height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+  }
+  video#list {
+    background: white;
+    margin: 0 auto;
+    aspect-ratio: 16/9;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
     cursor: pointer;
   }
   .testimonials {
@@ -126,9 +128,10 @@
   }
 
   .featured_testimonial {
-    max-width: auto;
+    // width: 80%;
+    background: white;
+    width: auto;
     height: 500px;
-    background: red;
   }
 
   .testimonial {
