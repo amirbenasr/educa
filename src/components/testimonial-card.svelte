@@ -37,6 +37,23 @@
 </div>
 
 <style lang="scss">
+  @media (max-width: 720px) {
+    img {
+      // height: 12rem !important;
+      width: auto !important;
+      text-align: center !important;
+    }
+    .content {
+      height: min-content;
+      font-size: 100%;
+      h2 {
+        font-size: 15px !important;
+      }
+      p {
+        font-size: 10px !important;
+      }
+    }
+  }
   :global(.slidetext) {
     transform: translateY(0%) !important;
   }
@@ -67,7 +84,7 @@
 
     img {
       max-width: 100%;
-      height: 100%;
+      max-height: 100%;
       object-fit: fill;
       transition: all 400ms ease-in-out !important ;
     }
