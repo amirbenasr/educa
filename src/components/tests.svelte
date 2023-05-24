@@ -70,6 +70,9 @@
       overflow-x: scroll !important;
       height: auto !important;
     }
+    .featured_testimonial {
+      height: auto !important;
+    }
   }
   .active {
     border: 2px solid hsl(150, 150, 30%);
