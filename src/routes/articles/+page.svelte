@@ -23,7 +23,7 @@
 <section class="container articles">
   <h1 class="title">News at Educa Us</h1>
   {#await loadPosts()}
-    <p class="title">Loading...</p>
+    <p>Loading...</p>
   {:then posts}
     {#each posts as post}
       <!-- svelte-ignore a11y-click-events-have-key-events -->
@@ -50,10 +50,10 @@
 
 <style lang="scss">
   h1 {
-    color: white;
+    color: white !important;
   }
   a {
-    position: absolute;
+    position: relative;
     bottom: 5;
   }
   .articles {
@@ -77,7 +77,7 @@
     padding-bottom: 1rem;
     border-bottom: 2px solid var(--primary-color-lighter);
     p {
-      color: white;
+      color: white !important;
       transition: all 200ms ease-in;
       font-weight: 500;
     }
@@ -108,11 +108,11 @@
       display: block;
     }
     .article-title {
-      color: black;
-      font-weight: 500;
+      color: hsl(240, 45%, 55%) !important;
+      font-weight: 800;
     }
     .article-category {
-      color: var(--primary-color-lighter);
+      color: white;
       font-size: 0.8rem;
       font-style: italic;
       text-transform: uppercase;

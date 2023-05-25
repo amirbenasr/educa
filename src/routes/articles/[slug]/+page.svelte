@@ -25,10 +25,13 @@
     <p>Loading post...</p>
   {:then post}
     <div class="article">
-      <h6>{format(new Date(post.date), "dd, MMM YYY")}</h6>
-      <h5>{post.category}</h5>
-      <hr />
       <h1 class="title">{post.title.rendered.toString()}</h1>
+
+      <span style="color:white">
+        <small>{format(new Date(post.date), "dd, MMM YYY")}</small>
+        , <small>{post.category}</small>
+      </span>
+      <hr />
       {#if post.image}
         <img src={post.image} alt="" srcset="" />
       {/if}
@@ -38,6 +41,9 @@
 </section>
 
 <style>
+  .title {
+    font-size: 3em !important;
+  }
   .article {
     max-width: 80%;
     margin: 0 auto;
