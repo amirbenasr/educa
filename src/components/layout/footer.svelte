@@ -81,7 +81,7 @@
     background: url("$lib/svgs/linkedin.svg");
   }
 
-  @media screen and (width < 750px) {
+  @media screen and (max-width: 750px) {
     footer {
       display: grid !important;
       grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));

@@ -1,22 +1,11 @@
 <script lang="ts">
   import Chartsbanner from "../components/chartsbanner.svelte";
-  import figure from "$lib/images/figure1.png";
-  import figure1 from "$lib/images/figure2.png";
-  import figure2 from "$lib/images/figure3.png";
-  import line1 from "$lib/svgs/line1.png";
-  import Sticker from "../components/sticker.svelte";
-  import Offersection from "../components/offersection.svelte";
   import Destinations from "../components/destinations.svelte";
   import Footer from "../components/layout/footer.svelte";
   import Testimonials from "../components/testimonials.svelte";
-  import video2 from "$lib/video.mp4";
-  import Load from "../components/load.svelte";
   import OffersSlider from "../components/offersSlider.svelte";
   import Tests from "../components/tests.svelte";
 
-  // onMount(() => {
-  //   preloadData("/articles");
-  // });
   const themes = {
     blueG: {
       color1: "#224373",
@@ -31,13 +20,16 @@
       color2: "#00FFBE",
     },
   };
-
-  //video appending logic
-  let video: HTMLElement;
 </script>
 
 <section class="hero">
-  <video src={video2} muted autoplay loop id="myVideo" />
+  <video
+    src="https://res.cloudinary.com/dyw4slb0a/video/upload/v1684920302/video_n1hsqo.mp4"
+    muted
+    autoplay
+    loop
+    id="myVideo"
+  />
   <div class="hero-text">
     <span class="big-title">EDUCA US.</span>
     <hr />
@@ -68,12 +60,12 @@
     background-image: url("$lib/svgs/waves.svg");
     width: 100%;
   }
-  @media (width > 850px) {
+  @media (min-width: 850px) {
     .offers_title {
       font-size: var(--font-size-xl) !important;
     }
   }
-  @media (width < 800px) {
+  @media (max-width: 800px) {
     video {
       max-width: 100% !important;
       max-height: 100% !important;

@@ -57,6 +57,13 @@
 </section>
 
 <style lang="scss">
+  @media (max-width: 500px) {
+    .box {
+      grid-template-columns: 1fr 1fr !important;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+  }
   .blue {
     background: var(--primary-color);
   }

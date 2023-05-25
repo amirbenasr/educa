@@ -159,7 +159,7 @@
 </section>
 
 <style lang="scss">
-  @media (width < 900px) {
+  @media (max-width: 900px) {
     .figure {
       display: none;
     }
@@ -219,6 +219,8 @@
   }
 
   .offers {
+    // word-wrap: break-word;
+    word-break: break-word;
     overflow: hidden;
     background: linear-gradient(hsla(94, 31%, 82%, 1), hsla(213, 81%, 21%, 1));
     align-items: center;
@@ -240,6 +242,8 @@
   }
 
   .offer {
+    word-wrap: break-word;
+
     flex: 1 0 100%;
     object-fit: cover;
     scroll-snap-align: start;
@@ -280,5 +284,6 @@
   h1,
   h2 {
     text-transform: uppercase;
+    text-align: center;
   }
 </style>
