@@ -72,8 +72,9 @@
     padding: 1rem;
     .box {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(16rem, 20rem));
-      justify-content: center;
+      grid-template-columns: 1fr 1fr 1fr;
+      // grid-template-columns: repeat(auto-fill, minmax(16rem, 20rem));
+      // justify-content: stretch;
       gap: 0.5rem;
     }
     p {

@@ -143,6 +143,7 @@
     background: white;
     width: auto;
     height: 500px;
+    display: flex;
   }
 
   .testimonial {
