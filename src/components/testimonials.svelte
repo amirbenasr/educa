@@ -48,7 +48,7 @@
 </script>
 
 <section class="testimonials blue">
-  <h1 style="margin-top:0;margin-bottom:2rem;">Testimonials</h1>
+  <!-- <h1 style="margin-top:0;margin-bottom:2rem;">Testimonials</h1> -->
   <div class="box">
     {#each testimonials as testimonial}
       <TestimonialCard {testimonial} />

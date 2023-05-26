@@ -1,5 +1,5 @@
 <script>
-  import logo from "$lib/logos/logo.png";
+  import logo from "$lib/logos/logo.svg";
   import hamburger from "$lib/svgs/hamburger.svg";
   import close from "$lib/svgs/close.svg";
   import { onMount } from "svelte";
@@ -141,10 +141,12 @@
     background: var(--primary-color);
 
     .logo {
-      height: 50px;
+      height: 160px;
+      width: 160px;
       img {
-        max-width: 100%;
-        max-height: 100%;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
       }
     }
     ul {
