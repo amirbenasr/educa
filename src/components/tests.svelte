@@ -139,7 +139,6 @@
   }
 
   .featured_testimonial {
-    // width: 80%;
     background: white;
     width: auto;
     height: 500px;
