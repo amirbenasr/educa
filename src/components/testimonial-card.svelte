@@ -47,7 +47,7 @@
       height: min-content;
       font-size: 100%;
       h2 {
-        font-size: 15px !important;
+        font-size: 10px !important;
       }
       p {
         font-size: 10px !important;
@@ -59,6 +59,12 @@
   }
   :global(.zoom) {
     transform: scale(1.02);
+  }
+  h2 {
+    font-size: var(--font-size-md) !important;
+  }
+  p {
+    font-size: var(--font-size-xsm) !important;
   }
   .testimonial__card {
     cursor: pointer;

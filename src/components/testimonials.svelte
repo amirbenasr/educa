@@ -57,7 +57,7 @@
 </section>
 
 <style lang="scss">
-  @media (max-width: 500px) {
+  @media (max-width: 700px) {
     .box {
       grid-template-columns: 1fr 1fr !important;
       justify-content: center;
@@ -72,9 +72,8 @@
     padding: 1rem;
     .box {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      // grid-template-columns: repeat(auto-fill, minmax(16rem, 20rem));
-      // justify-content: stretch;
+      grid-template-columns: repeat(3, minmax(14rem, 18rem));
+      justify-content: center;
       gap: 0.5rem;
     }
     p {
