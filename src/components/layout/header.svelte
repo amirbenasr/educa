@@ -18,11 +18,18 @@
     hamburgerElement.style.display = "inline-block";
     closeElement.style.display = "none";
   }
+
+  function checkModal() {
+    mobileMenu.classList.add("hide");
+    hamburgerElement.style.display = "inline-block";
+    closeElement.style.display = "none";
+    // alert("test")
+  }
 </script>
 
 <nav class="nav">
   <div class="logo">
-    <a on:click={() => closeMobileMenu()} href="/">
+    <a on:click={() => checkModal()} href="/">
       <img src={logo} alt="educa-us logo" srcset="" />
     </a>
   </div>
@@ -106,7 +113,7 @@
   }
   .mobile-menu {
     min-height: 100vh;
-    z-index: 2;
+    z-index: 99;
     transition: all 300ms;
     text-transform: uppercase;
     text-align: center;
