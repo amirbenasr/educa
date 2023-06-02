@@ -22,9 +22,10 @@
   padding: 0;
   --line-height: calc(2ex + 12px);
   line-height: var(--line-height);
+  -webkit-font-smoothing: antialiased;
 }
 html {
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
 }
 
 body {
