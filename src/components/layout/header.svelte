@@ -110,11 +110,16 @@
   }
   .hide {
     transform: translateX(-100%);
+    display: inline-block !important;
+    opacity:0 !important ;
+
   }
   .mobile-menu {
     min-height: 100vh;
     z-index: 99;
-    transition: all 300ms;
+    transition: all 200ms ;
+    // display: none;
+    opacity:1 ;
     text-transform: uppercase;
     text-align: center;
     color: white;
