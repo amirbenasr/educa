@@ -35,7 +35,7 @@ import hero from '$lib/images/hero.jpg'
     <span class="big-title">EDUCA US.</span>
     <hr />
     <span>
-      <span style="color:var(--accent-color);">Your</span> dreams
+      <span style="color:var(--accent-color);">Your</span> dream
       <span style="color:var(--primary-color)">begins</span> here.
     </span>
   </div>
