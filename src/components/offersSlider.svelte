@@ -56,8 +56,8 @@
   </header>
 
   <div class="offers__slider">
-    <div class="right" on:click={slideRight} />
-    <div class="left" on:click={slideLeft} />
+    <div class="right" on:click={slideLeft} />
+    <div class="left" on:click={slideRight} />
 
     <div id="offer1" class="offer">
       <div class="offer-slide">
