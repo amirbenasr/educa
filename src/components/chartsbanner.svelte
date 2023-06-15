@@ -29,7 +29,7 @@
   });
 </script>
 
-<div class="chart-banner">
+<div class="chart-banner pattern1">
   <div id="one" class="chart-block">
     <span class="emph">#1</span>
     <span class="content">study & travel agency in tunisia</span>
@@ -65,8 +65,11 @@
       }
     }
   }
+  .pattern1{
+    background-image: repeating-linear-gradient(36deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 0px, transparent 2px);
+}
   .chart-banner {
-    opacity: 0.8;
+    opacity: 1;
     display: flex;
     position: absolute;
     align-items: start;

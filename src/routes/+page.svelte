@@ -5,7 +5,7 @@
   import Testimonials from "../components/testimonials.svelte";
   import OffersSlider from "../components/offersSlider.svelte";
   import Tests from "../components/tests.svelte";
-
+import hero from '$lib/images/hero.jpg'
   const themes = {
     blueG: {
       color1: "#224373",
@@ -23,25 +23,25 @@
 </script>
 
 <section class="hero">
-  <video
+  <!-- <img class="" src={hero} alt="" srcset=""> -->
+  <!-- <video
     src="https://res.cloudinary.com/dyw4slb0a/video/upload/v1684920302/video_n1hsqo.mp4"
     muted
     autoplay
     loop
     id="myVideo"
-  />
+  /> -->
   <div class="hero-text">
     <span class="big-title">EDUCA US.</span>
     <hr />
     <span>
-      <span style="color:var(--accent-color);">Your</span> dreams
+      <span style="color:var(--accent-color);">Your</span> dream
       <span style="color:var(--primary-color)">begins</span> here.
     </span>
   </div>
   <Chartsbanner />
 </section>
 
-<!-- <div class="spacer layer" /> -->
 <OffersSlider />
 <Destinations />
 <Tests />
@@ -94,12 +94,13 @@
     margin: 0 auto;
   }
   .hero {
-    // background: url("$lib/images/hero.jpg");
+    background: url("$lib/images/hero.jpg");
+    
     position: relative;
     box-shadow: inset 0 2em 100px 0 var(--primary-color);
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     height: calc(100vh - 60px);
     height: calc(100svh - 60px);
     opacity: 1;
@@ -108,16 +109,15 @@
     align-items: center;
     .hero-text {
       display: block;
-      opacity: 0;
+      opacity: 1;
+
     }
 
     video {
       z-index: -1;
-      // scale: 1;
       object-fit: fill;
       width: 100%;
       height: 100%;
-      // object-position: 50% 20%;
     }
 
     .hero-text {
@@ -125,7 +125,7 @@
       text-shadow: 0px 1px 5px rgb(44, 42, 42);
       text-align: center;
       font-weight: 700;
-      z-index: 1;
+      z-index:8;
       transform: translateY(-50px);
       .big-title {
         font-size: 4rem;
