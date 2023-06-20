@@ -6,6 +6,8 @@
   import OffersSlider from "../components/offersSlider.svelte";
   import Tests from "../components/tests.svelte";
 import hero from '$lib/images/hero.jpg'
+    import Facebook from "../components/facebook.svelte";
+    import { browser } from "$app/environment";
   const themes = {
     blueG: {
       color1: "#224373",
@@ -20,6 +22,8 @@ import hero from '$lib/images/hero.jpg'
       color2: "#00FFBE",
     },
   };
+
+
 </script>
 
 <section class="hero">
@@ -47,6 +51,7 @@ import hero from '$lib/images/hero.jpg'
 <Tests />
 <Testimonials />
 <Footer />
+<Facebook></Facebook>
 
 <style lang="scss">
   .spacer {

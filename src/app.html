@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    
     <title>Educa Us - Your Dream Begins Here.</title>
     <meta charset="utf-8" />
     <link rel="icon" href="%sveltekit.assets%/favicon.ico" />
@@ -8,6 +9,19 @@
     %sveltekit.head%
   </head>
   <body>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId            : '106274557824503',
+          autoLogAppEvents : true,
+          xfbml            : true,
+          version          : 'v17.0'
+        });
+      };
+    </script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+    
     <div style="display: contents">%sveltekit.body%</div>
   </body>
+
 </html>
