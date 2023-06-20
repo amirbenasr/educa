@@ -9,6 +9,9 @@
     %sveltekit.head%
   </head>
   <body>
+ 
+    
+    <div style="display: contents">%sveltekit.body%</div>
     <script>
       window.fbAsyncInit = function() {
         FB.init({
@@ -20,8 +23,6 @@
       };
     </script>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
-    
-    <div style="display: contents">%sveltekit.body%</div>
   </body>
 
 </html>

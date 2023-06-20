@@ -6,9 +6,12 @@
 
 
   onMount(()=> {
-     var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "106274557824503");
-      chatbox.setAttribute("attribution", "biz_inbox");
+    if(browser)
+    {
+        var chatbox = document.getElementById('fb-customer-chat');
+         chatbox.setAttribute("page_id", "106274557824503");
+         chatbox.setAttribute("attribution", "biz_inbox");
+    }
   })
 
   
