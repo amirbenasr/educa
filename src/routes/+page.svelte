@@ -5,9 +5,6 @@
   import Testimonials from "../components/testimonials.svelte";
   import OffersSlider from "../components/offersSlider.svelte";
   import Tests from "../components/tests.svelte";
-import hero from '$lib/images/hero.jpg'
-    import Facebook from "../components/facebook.svelte";
-    import { browser } from "$app/environment";
   const themes = {
     blueG: {
       color1: "#224373",

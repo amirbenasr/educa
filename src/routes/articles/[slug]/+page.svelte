@@ -14,7 +14,7 @@
     post = posts[0];
     post.category = post._embedded["wp:term"][0][0].name;
 
-    if (post?.image)
+    // if (post?.image)
       post.image = post?._embedded["wp:featuredmedia"][0].source_url;
     return post;
   };
@@ -33,7 +33,7 @@
       </span>
       <hr />
       {#if post.image}
-        <img src={post.image} alt="" srcset="" />
+        <img class="img" src={post.image} alt="" srcset="" />
       {/if}
       <p>{@html post.content.rendered}</p>
     </div>
@@ -49,4 +49,9 @@
     margin: 0 auto;
     color: black;
   }
+  .img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
 </style>

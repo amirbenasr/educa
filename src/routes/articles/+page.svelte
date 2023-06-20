@@ -20,30 +20,34 @@
   }
 </script>
 
-<section class="container articles">
-  <h1 class="title">News at Educa Us</h1>
+<section class="container">
+<h1 class="title" style="margin-bottom: 1rem;">News at Educa Us</h1>
   {#await loadPosts()}
     <p>Loading...</p>
   {:then posts}
     {#each posts as post}
+    <div class="articles">
+
       <!-- svelte-ignore a11y-click-events-have-key-events -->
       <div
-        on:click={() => {
-          goto(`articles/${post.slug}`);
-        }}
+      on:click={() => {
+        goto(`articles/${post.slug}`);
+      }}
         class="article"
         bind:this={article}
-      >
+        >
         <header>
+          <div class="img">
+            <img src={post.image} alt="" />
+          </div>
           <span class="article-category">{post.category}</span>
           <span class="article-title">{post.title.rendered}</span>
           <p>{@html post.excerpt.rendered}</p>
           <a href={`/articles/${post.slug}`}>Read More</a>
         </header>
-        <div class="img">
-          <img src={post.image} alt="" />
-        </div>
+        
       </div>
+    </div>
     {/each}
   {/await}
 </section>
@@ -58,12 +62,11 @@
   }
   .articles {
     color: white;
-    height: 100vh;
+    // height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     margin-top: 2rem;
-    max-width: 80%;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
     gap: 1rem;
   }
   .article {
@@ -71,6 +74,7 @@
     cursor: pointer;
     color: black;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
@@ -85,8 +89,8 @@
       color: var(--primary-color);
     }
     .img {
-      width: 150px;
-      height: 150px;
+      width: 400px;
+      height: 250px;
 
       img {
         max-width: 100%;
