@@ -51,7 +51,6 @@ import hero from '$lib/images/hero.jpg'
 <Tests />
 <Testimonials />
 <Footer />
-<Facebook/>
 
 <style lang="scss">
   .spacer {
