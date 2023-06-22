@@ -25,8 +25,8 @@
   {#await loadPosts()}
     <p>Loading...</p>
   {:then posts}
+  <div class="articles">
     {#each posts as post}
-    <div class="articles">
 
       <!-- svelte-ignore a11y-click-events-have-key-events -->
       <div
@@ -47,8 +47,8 @@
         </header>
         
       </div>
+      {/each}
     </div>
-    {/each}
   {/await}
 </section>
 
@@ -62,23 +62,24 @@
   }
   .articles {
     color: white;
-    // height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: grid ;
+    grid-template-columns: repeat(auto-fill,minmax(20rem,1fr))  ;
+    grid-auto-flow: row;
     margin-top: 2rem;
     margin: 0 auto;
-    gap: 1rem;
+    gap: 5rem;
   }
   .article {
     position: relative;
     cursor: pointer;
     color: black;
     display: flex;
+    // border-right: 1px solid white;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
-    padding-bottom: 1rem;
+    // padding-bottom: 1rem;
     border-bottom: 2px solid var(--primary-color-lighter);
     p {
       color: white !important;
