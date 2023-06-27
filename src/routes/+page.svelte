@@ -1,4 +1,7 @@
+
+
 <script lang="ts">
+  
   import Chartsbanner from "../components/chartsbanner.svelte";
   import Destinations from "../components/destinations.svelte";
   import Footer from "../components/layout/footer.svelte";
