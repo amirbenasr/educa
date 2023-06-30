@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
   import figure from "$lib/images/figure1.png";
   import figure2 from "$lib/images/figure2.png";
   import figure3 from "$lib/images/figure3.png";
@@ -286,4 +286,4 @@
     text-transform: uppercase;
     text-align: center;
   }
-</style>
+</style> -->

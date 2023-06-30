@@ -1,13 +1,12 @@
-
-
 <script lang="ts">
-  
   import Chartsbanner from "../components/chartsbanner.svelte";
   import Destinations from "../components/destinations.svelte";
   import Footer from "../components/layout/footer.svelte";
   import Testimonials from "../components/testimonials.svelte";
   import OffersSlider from "../components/offersSlider.svelte";
   import Tests from "../components/tests.svelte";
+  import OffersNew from "../components/offersNew.svelte";
+  import Loading from "../components/layout/loading.svelte";
   const themes = {
     blueG: {
       color1: "#224373",
@@ -22,8 +21,6 @@
       color2: "#00FFBE",
     },
   };
-
-
 </script>
 
 <section class="hero">
@@ -46,6 +43,7 @@
   <Chartsbanner />
 </section>
 
+<OffersNew />
 <OffersSlider />
 <Destinations />
 <Tests />
@@ -99,7 +97,6 @@
   }
   .hero {
     background: url("$lib/images/hero.jpg");
-    
     position: relative;
     box-shadow: inset 0 2em 100px 0 var(--primary-color);
     background-repeat: no-repeat;
@@ -114,7 +111,6 @@
     .hero-text {
       display: block;
       opacity: 1;
-
     }
 
     video {
@@ -129,7 +125,7 @@
       text-shadow: 0px 1px 5px rgb(44, 42, 42);
       text-align: center;
       font-weight: 700;
-      z-index:8;
+      z-index: 8;
       transform: translateY(-50px);
       .big-title {
         font-size: 4rem;

@@ -111,13 +111,13 @@
   .hide {
     transform: translateX(-100%);
     display: inline-block !important;
-    opacity:0 !important ;
+    opacity: 0 !important ;
   }
   .mobile-menu {
     min-height: 100vh;
     z-index: 99;
-    transition: all 200ms ;
-    opacity:1 ;
+    transition: all 200ms;
+    opacity: 1;
     text-transform: uppercase;
     text-align: center;
     color: white;
@@ -138,10 +138,10 @@
     }
   }
   nav.nav {
-    // position: sticky;
-    // top: 0;
+    position: sticky;
+    top: 0;
     z-index: 55;
-    opacity: 0.9;
+    // opacity: 0.9;
     height: 60px;
     font-weight: 500;
     text-transform: uppercase;
