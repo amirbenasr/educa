@@ -1,59 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    
     <title>Educa Us - Study in the US.</title>
     <script type="application/ld+json">
-    {
-      "@context" : "https://schema.org",
-      "@type" : "WebSite",
-      "name" : "Educa Us",
-      "url" : "https://educaus.net"
-    }
-  </script>
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Educa Us",
+        "url": "https://educaus.net"
+      }
+    </script>
     <meta charset="utf-8" />
     <link rel="icon" href="%sveltekit.assets%/favicon.ico" />
     <meta name="viewport" content="width=device-width" />
     %sveltekit.head%
   </head>
   <body>
- <!-- Messenger Plugin de discussion Code -->
- <div id="fb-root"></div>
- <!-- Your Plugin de discussion code -->
- <div id="fb-customer-chat" class="fb-customerchat">
- </div>
- <script>
-   var chatbox = document.getElementById('fb-customer-chat');
-   chatbox.setAttribute("page_id", "106274557824503");
-   chatbox.setAttribute("attribution", "biz_inbox");
- </script>
- <!-- Your SDK code -->
- <script>
-   window.fbAsyncInit = function() {
-     FB.init({
-       xfbml            : true,
-       version          : 'v17.0'
+    <!-- Messenger Plugin de discussion Code -->
+    <div id="fb-root"></div>
+    <!-- Your Plugin de discussion code -->
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
+    <script>
+      var chatbox = document.getElementById("fb-customer-chat");
+      chatbox.setAttribute("page_id", "106274557824503");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          xfbml: true,
+          version: "v17.0",
+        });
+      };
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
 
-     });
-   };
-   (function(d, s, id) {
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) return;
-     js = d.createElement(s); js.id = id;
-     js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
- </script>
-    
     <div style="display: contents">%sveltekit.body%</div>
-  
+
     <script type="module">
       // Import the functions you need from the SDKs you need
       import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
       import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-analytics.js";
       // TODO: Add SDKs for Firebase products that you want to use
       // https://firebase.google.com/docs/web/setup#available-libraries
-    
+
       // Your web app's Firebase configuration
       // For Firebase JS SDK v7.20.0 and later, measurementId is optional
       const firebaseConfig = {
@@ -63,13 +62,28 @@
         storageBucket: "educaus-2baff.appspot.com",
         messagingSenderId: "674362216624",
         appId: "1:674362216624:web:c59a6ba74b7b7bc5462b75",
-        measurementId: "G-70JT2W8RQF"
+        measurementId: "G-70JT2W8RQF",
       };
-    
+
       // Initialize Firebase
       const app = initializeApp(firebaseConfig);
       const analytics = getAnalytics(app);
     </script>
-  </body>
 
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = "https://embed.tawk.to/649fed0194cf5d49dc60df73/1h48bbk5b";
+        s1.charset = "UTF-8";
+        s1.setAttribute("crossorigin", "*");
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
+  </body>
 </html>
