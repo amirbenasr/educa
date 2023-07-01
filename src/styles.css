@@ -115,3 +115,8 @@ section {
     max-width: 300px !important;
   }
 }
+
+.widget-visible > iframe {
+  right: auto !important;
+  left: 20px !important;
+}
