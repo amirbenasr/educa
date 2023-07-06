@@ -15,7 +15,7 @@
     post.category = post._embedded["wp:term"][0][0].name;
 
     // if (post?.image)
-      post.image = post?._embedded["wp:featuredmedia"][0].source_url;
+    post.image = post?._embedded["wp:featuredmedia"][0].source_url;
     return post;
   };
 </script>
@@ -54,4 +54,8 @@
     max-height: 100%;
   }
 
+  :global(a) {
+    color: white !important;
+    font-weight: bold;
+  }
 </style>

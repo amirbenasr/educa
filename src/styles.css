@@ -33,7 +33,7 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   background: hsla(213, 81%, 21%, 1);
-  color: rgb(225, 222, 222);
+  color: white;
   line-height: 1.5;
   font-size: var(--font-size-base);
 }
