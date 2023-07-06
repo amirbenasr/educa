@@ -156,7 +156,9 @@
     a {
       text-decoration: none;
       color: white;
+
       background: hsl(240, 45%, 55%);
+      font-weight: bold !important;
       padding: 0.2rem;
       border-radius: 5px;
       margin-top: auto;

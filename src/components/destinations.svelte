@@ -35,6 +35,9 @@
 </section>
 
 <style lang="scss">
+  h1.title {
+    margin-bottom: 1rem !important;
+  }
   @media (min-width: 1000px) {
     .stats-banner {
       max-width: 150px !important;
@@ -81,8 +84,9 @@
     justify-content: center;
     align-items: center;
     .max-t {
+      max-width: 60%;
       font-size: var(--font-size-base);
-      max-width: 700px;
+      // max-width: 700px;
       text-align: center;
     }
     .title {
