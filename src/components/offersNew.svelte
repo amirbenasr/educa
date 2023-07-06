@@ -3,7 +3,6 @@
   import image from "$lib/images/logistics.jpeg";
   import image2 from "$lib/images/language.jpeg";
   import image3 from "$lib/images/hero.jpg";
-  import gsap from "gsap/dist/gsap";
   import { onMount } from "svelte";
 
   let selectedArticle = 1;
@@ -34,9 +33,6 @@
       }
     });
 
-    // gsap.to(".more svg", { x: "100px" });
-    // add animation to svg icon to Button Click more
-    // let svg = document.querySelector("svg");
     let more = document.querySelectorAll(".more");
     more.forEach((_more) => {
       _more.addEventListener("mouseover", (e) => {
@@ -141,6 +137,15 @@
 </section>
 
 <style>
+  @media (width < 750px) {
+    .list-right {
+      display: none !important;
+    }
+    article {
+      margin-bottom: 1rem !important;
+      height: auto !important;
+    }
+  }
   h1 {
     text-transform: uppercase;
     margin-bottom: 2rem;
