@@ -3,10 +3,14 @@
   import { BASE_URL, POSTS_API_URL } from "$lib/consts";
   import { format } from "date-fns";
   import { onMount } from "svelte";
+
   var result = format(new Date("2023-07-04T21:51:57"), "MM/dd/yyyy");
   let article;
   let posts = [];
 
+  function routeToPage(route) {
+    goto(`/${route}`);
+  }
   function formatDate(date) {
     var result = format(new Date(date), "MMM. dd, yyyy");
     return result;
@@ -33,7 +37,12 @@
     <ul class="articles">
       {#each posts as post}
         <li>
-          <article class="news_article">
+          <article
+            class="news_article"
+            on:click={() => {
+              routeToPage(`articles/${post.slug}`);
+            }}
+          >
             <header>
               <span class="article-category">{post.category}</span>
               <div class="text-wrapper">
