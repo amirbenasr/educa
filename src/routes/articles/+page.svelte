@@ -48,10 +48,10 @@
               <div class="text-wrapper">
                 <span class="article-title">{post.title.rendered}</span>
               </div>
-              <span class="date"
+              <!-- <span class="date"
                 >{formatDate(post.date)} | by {post.yoast_head_json
                   .author}</span
-              >
+              > -->
 
               <a href="/articles/{post.slug}">Read More</a>
             </header>
