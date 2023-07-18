@@ -17,7 +17,7 @@
     <div class="stats-banner">
       <div class="stat-block">
         <span class="title">+50</span>
-        <span class="sub-title">Universitites and High Schools</span>
+        <span class="sub-title">Universities and High Schools</span>
       </div>
       <hr />
       <div class="stat-block">
@@ -27,7 +27,7 @@
       <hr />
       <div class="stat-block">
         <span class="title">100%</span>
-        <span class="sub-title">Intergration rate</span>
+        <span class="sub-title">Integration rate</span>
       </div>
     </div>
     <img src={map} alt="" srcset="" />
