@@ -118,7 +118,7 @@
     z-index: 99;
     transition: all 200ms;
     opacity: 1;
-    text-transform: uppercase;
+    text-transform: capitalize;
     text-align: center;
     color: white;
     width: 100%;
@@ -144,7 +144,7 @@
     // opacity: 0.9;
     height: 60px;
     font-weight: 500;
-    text-transform: uppercase;
+    text-transform: capitalize;
     display: flex;
     align-items: center;
     justify-content: space-around;

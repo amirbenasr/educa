@@ -32,12 +32,11 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
-  background: hsla(213, 81%, 21%, 1);
-  color: white;
+  color: #f3f3f3;
   line-height: 1.5;
   font-size: var(--font-size-base);
 }
-p,
+
 h1,
 h2,
 h3,

@@ -51,7 +51,7 @@
   }
 </script>
 
-<h1 style="text-align: center;  padding-block:20px;">
+<h1 style="text-align: center;  padding-block:20px;background:#f8f8f8">
   What we offer at educa us ?
 </h1>
 <section class="offers">
@@ -71,6 +71,20 @@
             create customized programs that meet the specific needs and
             interests of our students.
           </p>
+          <div class="tags">
+            <span class="tag">
+              <i class="fa-solid fa-map-location-dot" />
+              Destinations</span
+            >
+            <span class="tag">
+              <i class="fa-brands fa-connectdevelop" />
+              Itineraries
+            </span>
+            <span class="tag">
+              <i class="fa-solid fa-school" />
+              Educational
+            </span>
+          </div>
           <a class="more" href="#">
             <span>Know More</span>
             <span>
@@ -94,6 +108,19 @@
             opportunities for students to learn about history, art, and
             language.
           </p>
+          <div class="tags">
+            <span class="tag">
+              <i class="fa-solid fa-language" />
+              Language</span
+            >
+            <span class="tag">
+              <i class="fa-solid fa-graduation-cap" /> Academic
+            </span>
+            <span class="tag">
+              <i class="fa-solid fa-handshake" />
+              Partners
+            </span>
+          </div>
           <a class="more" href="#">
             <span>Know More</span>
             <span>
@@ -116,6 +143,20 @@
             program, from transportation to lodging to meals.We also provide
             on-site support and guidance to participants.
           </p>
+          <div class="tags">
+            <span class="tag">
+              <i class="fa-solid fa-truck-plane" />
+              Logistics</span
+            >
+            <span class="tag">
+              <i class="fa-solid fa-hand-holding-medical" />
+              Support
+            </span>
+            <span class="tag">
+              <i class="fa-solid fa-person-shelter" />
+              Security
+            </span>
+          </div>
           <a class="more" href="#">
             <span>Know More</span>
             <span>
@@ -137,6 +178,17 @@
 </section>
 
 <style>
+  .tags {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+  span.tag {
+    color: white;
+    background: var(--primary-color);
+    padding-inline: 0.4rem;
+    border-radius: 15px;
+  }
   @media (width < 750px) {
     .list-right {
       display: none !important;
@@ -149,24 +201,29 @@
   h1 {
     text-transform: uppercase;
     margin-bottom: 2rem;
+
+    color: var(--primary-color) !important;
   }
   h1.special {
     margin-bottom: 1.5rem;
     text-transform: uppercase;
-    background: blue;
-    padding: 1rem;
+    /* padding: 1rem; */
     border-radius: 60% 0% 42% 10% / 5% 15% 100% 10%;
   }
   p {
     line-height: 1.4rem;
     font-weight: 500;
     font-size: 1rem !important;
+    color: black !important;
   }
   a {
-    padding: 0.1rem;
+    border-radius: 15px;
+
+    padding-inline: 0.5rem;
     font-weight: bold;
-    width: 12rem;
+    width: fit-content;
     text-decoration: none;
+    background: var(--accent-color) !important;
     color: white;
     vertical-align: middle !important;
   }
@@ -191,7 +248,7 @@
     /* border-top-left-radius: 15%; */
   }
   article p {
-    padding-bottom: 32px;
+    padding-bottom: 16px;
   }
 
   .offers {
@@ -219,7 +276,8 @@
     flex: 1;
   }
   img {
-    border-radius: 40% 25% 42% 10% / 29% 21% 71% 10%;
+    border-radius: 15%;
+    /* border-radius: 40% 25% 42% 10% / 29% 21% 71% 10%; */
     opacity: 0;
     height: 70vh;
     width: 100%;

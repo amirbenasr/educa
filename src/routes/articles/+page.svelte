@@ -25,6 +25,7 @@
       post.category = post._embedded["wp:term"][0][0].name;
     });
     posts = _posts;
+    console.log(posts);
     return posts;
   }
 </script>
@@ -48,6 +49,8 @@
               <div class="text-wrapper">
                 <span class="article-title">{post.title.rendered}</span>
               </div>
+              {@html post.excerpt.rendered}
+
               <!-- <span class="date"
                 >{formatDate(post.date)} | by {post.yoast_head_json
                   .author}</span
@@ -76,6 +79,9 @@
 </section>
 
 <style lang="scss">
+  p {
+    color: black !important;
+  }
   @media (width < 780px) {
     img {
       width: 200px !important;
@@ -102,7 +108,8 @@
     }
   }
   h1 {
-    color: white !important;
+    color: var(--primary-color) !important;
+    text-align: center;
   }
   .text-wrapper {
     width: calc(100% - 250px);
@@ -165,13 +172,12 @@
     a {
       text-decoration: none;
       color: white;
-
-      background: hsl(240, 45%, 55%);
+      margin-top: 0.5rem;
+      background: var(--primary-color);
       font-weight: bold !important;
-      padding: 0.2rem;
+      padding-inline: 0.2rem;
+
       border-radius: 5px;
-      margin-top: auto;
-      flex-grow: 0;
     }
 
     span {
@@ -185,11 +191,12 @@
     .article-title {
       font-size: 1.2rem;
       height: auto;
-      color: hsl(240, 63%, 87%) !important;
+      color: rgb(43, 43, 43);
       font-weight: 900;
     }
     .article-category {
-      color: white;
+      color: black;
+      font-weight: 600;
       font-size: 0.75rem;
       text-transform: uppercase;
     }

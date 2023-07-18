@@ -25,7 +25,9 @@
     <p>Loading post...</p>
   {:then post}
     <div class="article">
-      <h1 class="title">{post.title.rendered.toString()}</h1>
+      <h1 class="title">
+        {@html post.title.rendered}
+      </h1>
 
       <span style="color:white">
         <small>{format(new Date(post.date), "dd, MMM YYY")}</small>
@@ -43,6 +45,7 @@
 <style>
   .title {
     font-size: 3em !important;
+    color: black !important;
   }
   .article {
     max-width: 80%;
@@ -52,10 +55,5 @@
   .img {
     max-width: 100%;
     max-height: 100%;
-  }
-
-  :global(a) {
-    color: white !important;
-    font-weight: bold;
   }
 </style>

@@ -55,6 +55,9 @@
 </section>
 
 <style lang="scss">
+  h1 {
+    color: var(--primary-color) !important;
+  }
   @media (max-width: 980px) {
     .testimonials_container {
       flex-direction: column;
