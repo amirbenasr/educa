@@ -100,6 +100,7 @@
             </span>
           </a>
         </article>
+       
         <article id="2">
           <h1 class="special">ACADEMIC COURSEWORK</h1>
           <p>
@@ -180,13 +181,16 @@
 <style>
   .tags {
     display: flex;
-    gap: 1rem;
-    margin-bottom: 3rem;
+    gap: 0.2rem;
+    margin-bottom: 2rem;
   }
   span.tag {
     color: white;
     background: var(--primary-color);
     padding-inline: 0.4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
     border-radius: 15px;
   }
   @media (width < 750px) {
@@ -194,14 +198,27 @@
       display: none !important;
     }
     article {
+      margin: 0 auto !important;
+      
       margin-bottom: 1rem !important;
       height: auto !important;
     }
+    .tags {
+    display: flex;
+    /* gap: 1rem; */
+    margin-bottom: 1rem;
+  }
+  article {
+    margin-bottom: 2rem;
+  }
+  /* h1,p {
+    text-align: center;
+
+  } */
   }
   h1 {
     text-transform: uppercase;
     margin-bottom: 2rem;
-
     color: var(--primary-color) !important;
   }
   h1.special {
@@ -218,7 +235,6 @@
   }
   a {
     border-radius: 15px;
-
     padding-inline: 0.5rem;
     font-weight: bold;
     width: fit-content;
@@ -235,14 +251,21 @@
   :global(.move) {
     padding-left: 1rem !important;
   }
+  .tags {
+    text-align: center;
+    width: 100%;
+    align-items: center !important;
+    justify-content: start !important;
+  }
 
   article {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 70vh;
-    margin-bottom: 4rem;
-    padding: 1rem;
+    padding-left: 1rem;
+    margin-bottom: 2rem !important;
+    /* padding: 1rem; */
     /* background: blue; */
     /* border-radius: 40% 16% 42% 10% / 29% 0% 45% 10%; */
     /* border-top-left-radius: 15%; */
