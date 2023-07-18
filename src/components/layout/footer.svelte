@@ -88,9 +88,9 @@
   }
   footer {
     border-top: 0.5px solid hsl(200, 100, 90%);
-    padding: 2rem;
+    padding: 1rem;
     text-align: left;
-    // background: black;
+    background: var(--primary-color);
     display: flex;
     flex-wrap: wrap;
 

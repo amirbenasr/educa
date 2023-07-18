@@ -65,7 +65,7 @@
     }
   }
   .blue {
-    background: var(--primary-color);
+    // background: var(--primary-color);
   }
 
   .testimonials {
@@ -81,6 +81,5 @@
       font-weight: 400;
       line-height: 1.6;
     }
-    background: var(--primary-color);
   }
 </style>
